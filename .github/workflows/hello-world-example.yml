@@ -25,5 +25,10 @@ jobs:
 
       -
 
+        name: Event
+        run: echo "Triggered by: $GITHUB_EVENT-NAME"
+
+      -
+
         name: Say Goodbye
         run: echo "Goodbye!"
