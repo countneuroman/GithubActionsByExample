@@ -13,6 +13,8 @@ jobs:
           echo "Step 2..."
           echo "Step 3..."
       - name: Event
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "Triggered by $GITHUB_CONTEXT"
       - name: Say Goodbye
         run: echo "Goodbye!"
