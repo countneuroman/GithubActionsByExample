@@ -13,6 +13,6 @@ jobs:
           echo "Step 2..."
           echo "Step 3..."
       - name: Event
-        run: echo "Triggered by:${{ env.$GITHUB_EVENT_NAME }}"
+        run: echo "Triggered by $GITHUB_EVENT_NAME"
       - name: Say Goodbye
         run: echo "Goodbye!"
