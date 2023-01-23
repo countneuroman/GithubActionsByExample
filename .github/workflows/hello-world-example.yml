@@ -13,6 +13,6 @@ jobs:
           echo "Step 2..."
           echo "Step 3..."
       - name: Event
-        run: echo "Triggered by $RUNNER_OS"
+        run: echo "Triggered by $GITHUB_CONTEXT"
       - name: Say Goodbye
         run: echo "Goodbye!"
